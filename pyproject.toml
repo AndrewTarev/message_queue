@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "message-queue"
+version = "0.1.0"
+description = ""
+authors = ["AndrewTarev <153756623+AndrewTarev@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+aio-pika = "^9.4.3"
+fastapi = {extras = ["standard"], version = "^0.115.5"}
+loguru = "^0.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
